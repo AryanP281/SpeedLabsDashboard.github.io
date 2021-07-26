@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dashboard</title>
+        <link rel="stylesheet" href="dashboardStyles.css" />
+        <script src="https://cdn.anychart.com/js/8.0.1/anychart-core.min.js"></script>
+        <script src="https://cdn.anychart.com/js/8.0.1/anychart-pie.min.js"></script>
+        <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <div class="panel">
+
+            <div class="side-nav-bar">
+                <h2>Dashboard</h2>
+                <i class="fa fa-cat"></i>
+                <button>Dashboard</button>
+                <button>Students</button>
+                <button>Report</button>
+                <button>Recruitment</button>
+                <button>Settings</button>
+                <button>Logout</button>
+            </div>
+
+            <div class="dashboard">
+                <div class="action-bar">
+                    <h4>Alexa John</h4>
+                    <img src="https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"/>
+                </div>
+
+                <div class="dashboard-title">
+                    <h3>Dashboard</h3>
+                    <h6>Home / Project Dashboard</h6>
+                </div>
+
+                <div class="dashboard-lists">
+                    
+                    <div class="time-sheet">
+                        <div class="time-sheet-titlebar">
+                            <h4>Time Sheet</h4>
+                        </div>
+                        <div class="time-sheet-grid-headers">
+                            <h5>Date</h5>
+                            <h5>Clock In</h5>
+                            <h5>Clock Out</h5>
+                            <h5>Total Working</h5>
+                        </div>
+                        <div class="time-sheet-grid">
+
+                            <h5>15/06/2021</h5>
+                            <h5>10:30</h5>
+                            <h5>9:00</h5>
+                            <h5>8.00</h5>
+
+                            <h5>16/06/2021</h5>
+                            <h5>10:30</h5>
+                            <h5>9:00</h5>
+                            <h5>8.00</h5>
+
+                            <h5>17/06/2021</h5>
+                            <h5>10:30</h5>
+                            <h5>9:00</h5>
+                            <h5>8.00</h5>
+
+                            <h5>18/06/2021</h5>
+                            <h5>10:30</h5>
+                            <h5>----</h5>
+                            <h5>----</h5>
+
+                            <h5>19/06/2021</h5>
+                            <h5>----</h5>
+                            <h5>----</h5>
+                            <h5>----</h5>
+
+                        </div>
+                    </div>
+
+                    <div class="applications-list">
+                        <h4>Applications</h4>
+                        <div class="applications-list-grid-header">
+                            <h5>Sr. No.</h5>
+                            <h5>Date</h5>
+                            <h5>Applicant Name</h5>
+                            <h5>Designation</h5>
+                            <h5>Email id</h5>
+                            <h5>Contact No</h5>
+                            <h5>Education</h5>
+                            <h5>Status</h5>
+                            <h5>Action</h5>
+                        </div>
+
+                        <div class="applications-list-grid">
+                            <h5>1</h5>
+                            <h5>29/01/2021</h5>
+                            <h5>Bhupesh Kumar</h5>
+                            <h5></h5>
+                            <h5></h5>
+                            <h5></h5>
+                            <h5>MBA</h5>
+                            <h5 style="color:red;">Rej</h5>
+                            <h5></h5>
+
+                            <h5>2</h5>
+                            <h5>29/01/2021</h5>
+                            <h5>xyz demo</h5>
+                            <h5> </h5>
+                            <h5> </h5>
+                            <h5> </h5>
+                            <h5>BCA</h5>
+                            <h5 style="color:orange;">SO</h5>
+                            <h5></h5>
+
+                            <h5>3</h5>
+                            <h5>29/01/2021</h5>
+                            <h5>xyz demo</h5>
+                            <h5></h5>
+                            <h5></h5>
+                            <h5></h5>
+                            <h5>BSC</h5>
+                            <h5 style="color:aquamarine;">SL</h5>
+                            <h5></h5>
+
+                            <h5>4</h5>
+                            <h5>29/01/2021</h5>
+                            <h5>xyz demo</h5>
+                            <h5></h5>
+                            <h5></h5>
+                            <h5></h5>
+                            <h5>BSC</h5>
+                            <h5 style="color:red;">Rej</h5>
+                            <h5></h5>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="dashboard-charts">
+                    <div class="pie-chart-container">
+                        <h3>Chart</h3>
+                        <div id="pie-chart">
+
+                        </div>
+
+                    </div>
+
+                    <div class="progress-chart-container">
+                        <h3>Chart</h3>
+                        <div class="progress-wheels">
+                            <div class="progress-wheel" id="wheel-1">
+                                <svg id="pg1" width="140" height="140">
+                                    <circle cx="70" cy="70" r="50" fill="white"/>
+                                    <text x="70" y="60" text-anchor="middle" font-size="1em" fill="grey" font-weight="bold">Data A</text>
+                                    <text x="75" y="90" text-anchor="middle" fill="orange" font-size="1.5em" font-weight="bolder">75%</text>
+                                </svg>
+                            </div>
+
+                            <div class="progress-wheel" id="wheel-2">
+                                <svg id="pg2" width="140" height="140">
+                                    <circle cx="70" cy="70" r="50" fill="white"/>
+                                    <text x="70" y="60" text-anchor="middle" font-size="1em" fill="grey" font-weight="bold">Data B</text>
+                                    <text x="75" y="90" text-anchor="middle" fill="blue" font-size="1.5em" font-weight="bolder">50%</text>
+                                </svg>
+                            </div>
+
+                            <div class="progress-wheel" id="wheel-3">
+                                <svg id="pg3" width="140" height="140">
+                                    <circle cx= "70" cy="70" r="50" fill="white"/>
+                                    <text x="70" y="60" text-anchor="middle" font-size="1em" fill="grey" font-weight="bold">Data B</text>
+                                    <text x="75" y="90" text-anchor="middle" fill="pink" font-size="1.5em" font-weight="bolder">40%</text>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <script src="dashboard.js"></script>
+    </body>
+
+</html>
